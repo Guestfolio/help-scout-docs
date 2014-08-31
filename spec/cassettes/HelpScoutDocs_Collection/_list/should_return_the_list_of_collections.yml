@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<api-key>:<api-password>@docsapi.helpscout.net/v1/collections
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Aug 2014 19:02:50 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '536'
+      "<api-password>-Frame-Options":
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"collections":{"page":1,"pages":1,"count":4,"items":[{"id":"5265aaffe4b0d77ef66a525e","siteId":"5265aaffe4b0d77ef66a525d","number":1,"slug":"support-articles","visibility":"public","order":1,"name":"Support
+        articles","description":null,"publicUrl":"http://help.guestfolio.com/collection/1-support-articles","articleCount":81,"publishedArticleCount":76,"createdBy":20055,"updatedBy":20055,"createdAt":"2013-10-21T22:30:23Z","updatedAt":"2014-02-04T01:22:10Z"},{"id":"52f03fb4e4b078f4bda9a70f","siteId":"5265aaffe4b0d77ef66a525d","number":83,"slug":"internal-articles","visibility":"private","order":1,"name":"Internal
+        articles","description":null,"publicUrl":"http://help.guestfolio.com/collection/83-internal-articles","articleCount":10,"publishedArticleCount":10,"createdBy":20055,"updatedBy":20055,"createdAt":"2014-02-04T01:17:40Z","updatedAt":"2014-02-04T01:17:45Z"},{"id":"5339e556e4b0cf4cd6580478","siteId":"5339e189e4b0cf4cd6580473","number":99,"slug":"general","visibility":"public","order":1,"name":"General","description":"","publicUrl":"http://help.lasso.in/collection/99-general","articleCount":2,"publishedArticleCount":2,"createdBy":20055,"updatedBy":20055,"createdAt":"2014-03-31T21:59:50Z","updatedAt":"2014-03-31T22:00:44Z"},{"id":"540221e9e4b019254d1ec25b","siteId":"540221a1e4b019254d1ec25a","number":145,"slug":"collection","visibility":"public","order":1,"name":"Collection","description":"","publicUrl":"http://rubydocsapi.helpscoutdocs.com/collection/145-collection","articleCount":2,"publishedArticleCount":0,"createdBy":20055,"updatedBy":20055,"createdAt":"2014-08-30T19:11:37Z","updatedAt":"2014-08-30T19:36:56Z"}]}}'
+    http_version: 
+  recorded_at: Sun, 31 Aug 2014 19:02:52 GMT
+recorded_with: VCR 2.9.0

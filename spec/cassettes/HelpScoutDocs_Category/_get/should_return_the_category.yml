@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<api-key>:<api-password>@docsapi.helpscout.net/v1/categories/540227d7e4b003be53bdcd28
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Aug 2014 19:02:50 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '286'
+      "<api-password>-Frame-Options":
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"category":{"id":"540227d7e4b003be53bdcd28","number":148,"slug":"category","visibility":"public","collectionId":"540221e9e4b019254d1ec25b","order":1,"defaultSort":"popularity","name":"Category","description":null,"articleCount":1,"publishedArticleCount":0,"publicUrl":"http://rubydocsapi.helpscoutdocs.com/category/148-category","createdBy":20055,"updatedBy":20055,"createdAt":"2014-08-30T19:36:55Z","updatedAt":"2014-08-31T01:20:20Z"}}'
+    http_version: 
+  recorded_at: Sun, 31 Aug 2014 19:02:50 GMT
+recorded_with: VCR 2.9.0

@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<api-key>:<api-password>@docsapi.helpscout.net/v1/articles/54027853e4b019254d1ec268/related
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Aug 2014 19:02:49 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '66'
+      "<api-password>-Frame-Options":
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"articles":{"page":1,"pages":1,"count":0,"items":[]}}'
+    http_version: 
+  recorded_at: Sun, 31 Aug 2014 19:02:49 GMT
+recorded_with: VCR 2.9.0

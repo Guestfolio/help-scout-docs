@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<api-key>:<api-password>@docsapi.helpscout.net/v1/sites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Aug 2014 19:02:53 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '1563'
+      "<api-password>-Frame-Options":
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"sites":{"page":1,"pages":1,"count":3,"items":[{"id":"5265aaffe4b0d77ef66a525d","subDomain":"guestfolio","cname":"help.guestfolio.com","hasPublicSite":true,"companyName":"Guestfolio","homePageContent":"categories","title":"Guestfolio
+        Knowledge Base","description":"Search the Guestfolio documentation","logoUrl":"https://s3.amazonaws.com/helpscout.net/docs/assets/5265aaffe4b0d77ef66a525c/images/5335ebb7e4b0cf4cd65802d2/Guestfolio-50.png","logoWidth":188,"logoHeight":50,"favIconUrl":"https://s3.amazonaws.com/helpscout.net/docs/assets/5265aaffe4b0d77ef66a525c/images/526afc70e4b09e5feddf352b/butterfly.png","touchIconUrl":"https://s3.amazonaws.com/helpscout.net/docs/assets/5265aaffe4b0d77ef66a525c/images/526afc9de4b09e5feddf352e/butterfly-200-1.png","homeUrl":"http://support.guestfolio.com","homeLinkText":"Documentation","pageBgColor":"#f5f5f5","headerBgColor":"#f8f8f8","navTextColor":"#888888","navActiveColor":"#30a5eb","linkColor":"#30a5eb","articleTextColor":null,"hasContactForm":false,"mailboxId":null,"contactEmail":null,"styleSheetUrl":"","headerCode":"<script>\nwindow.addEventListener(''load'',
+        function (){\n  var li = document.createElement(''li'');\n  var a = document.createElement(''a'');\n  var
+        link = document.createTextNode(\"Contact Support\");\n  a.appendChild(link);\n  a.href
+        = \"http://support.guestfolio.com/contact\";\n  li.appendChild(a);\n  var
+        home = document.getElementById(\"home\");\n  home.parentNode.insertBefore(li,
+        home.nextSibling);\n});\n</script>\n<link rel=''stylesheet'' id=''options_typography_Source+Sans+Pro-regular-css''  href=''https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular''
+        type=''text/css'' media=''all'' />\n<link rel=''stylesheet'' id=''options_typography_Source+Sans+Pro-300-css''  href=''https://fonts.googleapis.com/css?family=Source+Sans+Pro:300''
+        type=''text/css'' media=''all'' />\n<link rel=''stylesheet'' id=''options_typography_Source+Sans+Pro-700-css''  href=''https://fonts.googleapis.com/css?family=Source+Sans+Pro:700''
+        type=''text/css'' media=''all'' />\n<style>\nbody {\n  margin-top: 0;\n}\ndiv.navbar-inner
+        {\n  border-bottom: 1px solid #ddd;\n}\nh1, h2, h3 {\n  font-family: ''Source
+        Sans Pro'', ''Helvetica Neue'', Helvetica, Helvetica, Arial, sans-serif;\n}\n#sidebar
+        h3 {\n  color: #00a9dc;\n  font-weight: 200;\n  line-height: 1.25;\n  margin-bottom:
+        8px;\n  font-size: 1.2em;\n}\np.lu {\n  font-size: 0.6em;\n  text-align: right;\n}\nol,
+        li, ul {\n  margin-left: 20px;\n}\n.navbar .nav a {\n  font-family: ''Source
+        Sans Pro'', ''Helvetica Neue'', Helvetica, Helvetica, Arial, sans-serif;\n  text-transform:
+        uppercase;\n  font-size: 17px;\n  color: #888;\n}\n.navbar .nav a:hover {\n  color:
+        #00a9dc;\n}\n\n</style>\n\n<script src=\"//cdn.sublimevideo.net/js/q4o9lqsy.js\"
+        type=\"text/javascript\"></script>","metaDescription":"Frequently asked questions
+        and support documentation for Guestfolio","createdBy":20055,"updatedBy":20055,"createdAt":"2014-03-28T21:50:34Z","updatedAt":"2014-07-17T23:33:20Z"},{"id":"540221a1e4b019254d1ec25a","subDomain":"rubydocsapi","cname":null,"hasPublicSite":true,"companyName":"Guestfolio","homePageContent":"articles","title":"RubyDocsAPI","description":null,"logoUrl":null,"logoWidth":null,"logoHeight":null,"favIconUrl":null,"touchIconUrl":null,"homeUrl":null,"homeLinkText":null,"pageBgColor":null,"headerBgColor":null,"navTextColor":null,"navActiveColor":null,"linkColor":null,"articleTextColor":null,"hasContactForm":false,"mailboxId":0,"contactEmail":null,"styleSheetUrl":null,"headerCode":null,"metaDescription":null,"createdBy":20055,"updatedBy":20055,"createdAt":"2014-08-30T19:10:25Z","updatedAt":"2014-08-30T19:10:25Z"},{"id":"5339e189e4b0cf4cd6580473","subDomain":"lasso","cname":"help.lasso.in","hasPublicSite":true,"companyName":"Guestfolio","homePageContent":"articles","title":"Lasso","description":"","logoUrl":"https://s3.amazonaws.com/helpscout.net/docs/assets/5265aaffe4b0d77ef66a525c/images/5400bb85e4b003be53bdcb6c/logo-large.png","logoWidth":75,"logoHeight":75,"favIconUrl":null,"touchIconUrl":"https://s3.amazonaws.com/helpscout.net/docs/assets/5265aaffe4b0d77ef66a525c/images/5400bb73e4b003be53bdcb6b/logo-large.png","homeUrl":"http://www.lasso.in","homeLinkText":"Home","pageBgColor":"#ffffff","headerBgColor":"#22a0a6","navTextColor":"#ffffff","navActiveColor":"#e7e7e7","linkColor":"#e41e25","articleTextColor":"#222222","hasContactForm":true,"mailboxId":20878,"contactEmail":null,"styleSheetUrl":"","headerCode":"","metaDescription":"","createdBy":20055,"updatedBy":20055,"createdAt":"2014-08-29T17:45:25Z","updatedAt":"2014-08-29T17:45:25Z"}]}}'
+    http_version: 
+  recorded_at: Sun, 31 Aug 2014 19:02:53 GMT
+recorded_with: VCR 2.9.0

@@ -1,0 +1,6 @@
+require 'help_scout_docs/error'
+require 'help_scout_docs/error/authentication_error'
+require 'help_scout_docs/error/configuration_error'
+require 'help_scout_docs/error/options_error'
+require 'help_scout_docs/error/parser_error'
+require 'help_scout_docs/error/resource_not_found_error'

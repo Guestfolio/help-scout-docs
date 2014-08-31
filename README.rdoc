@@ -1,0 +1,62 @@
+= Help Scout Docs
+
+This limited (read-only) Help Scout Docs API integration provides functionality for extracting existing documentation content
+
+See: http://developer.helpscout.net/docs-api/
+
+== Interfacing with the API directly
+
+=== Configuration
+
+In your initializer:
+
+  HelpScoutDocs.configure do |config|
+    config.api_key  = "api-key"
+  end
+
+Or set ENV['HELP_SCOUT_DOCS_API_KEY']
+
+==== Create client
+
+  client = HelpScoutDocs::Client.new({api_key: "api-key"})
+
+==== Articles
+
+Supported methods: get, list (by_category, by_collection), related, revisions, get_revision
+
+  HelpScoutDocs::Article.new.get(1)
+    => HelpScoutDoc::Result #response=>{article: {id: 1, number: "6239e556e4b0cf4cd3254852"} ...}
+
+==== Categories
+
+Supported methods: list, get
+
+  HelpScoutDocs::Category.new.list(1)
+  HelpScoutDocs::Category.new.get(1)
+
+==== Collections
+
+Supported methods: list, get
+
+  HelpScoutDocs::Collection.new.list
+  HelpScoutDocs::Collection.new.get(1)
+
+==== Sites
+
+Supported methods: list, get
+
+  HelpScoutDocs::Collection.new.list
+  HelpScoutDocs::Collection.new.get(1)
+
+=== Passing parameters
+
+Additional parameters are supported for each request (as well as ids in place of numbers), for example:
+
+  HelpScoutDocs::Collection.new.list("123", { siteId: 1, page: 2 })
+
+
+== TODO
+
+* Add objects for returned types (Asset, Article, Category, Collection, Site) and collections
+* Add write methods (create, update etc.)
+* Handle all error response codes
