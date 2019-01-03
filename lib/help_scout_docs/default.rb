@@ -9,7 +9,7 @@ module HelpScoutDocs
 #     Faraday.default_adapter = :net_http_persistent
 
     ENDPOINT = 'https://docsapi.helpscout.net/v1/'
-    MIDDLEWARE = Faraday::Builder.new do |builder|
+    MIDDLEWARE = Faraday::RackBuilder.new do |builder|
       # Encode request params as "www-form-urlencoded"
       builder.use Faraday::Request::UrlEncoded
       # Parse JSON response bodies
@@ -45,7 +45,7 @@ module HelpScoutDocs
       # @note Faraday's middleware stack implementation is comparable to that of Rack middleware.  The order of middleware is important: the first middleware on the list wraps all others, while the last middleware is the innermost one.
       # @see https://github.com/technoweenie/faraday#advanced-middleware-usage
       # @see http://mislav.uniqpath.com/2011/07/faraday-advanced-http/
-      # @return [Faraday::Builder]
+      # @return [Faraday::RackBuilder]
       def middleware
         MIDDLEWARE
       end
