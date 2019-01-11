@@ -17,14 +17,13 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.has_rdoc = true
-
   s.add_development_dependency "multi_json", "~> 1.8"
 
   s.add_development_dependency "rspec", "~> 3.0"
   s.add_development_dependency "webmock", "~> 1.15"
   s.add_development_dependency "vcr", "~> 2.9"
   s.add_development_dependency "json_spec", "~> 1.1"
+  s.add_development_dependency "pry", "~> 0.12.2"
 
   s.add_runtime_dependency "log4r", "~> 1.1"
   s.add_runtime_dependency "faraday_middleware", "~> 0.9"
